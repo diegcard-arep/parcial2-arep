@@ -6,11 +6,11 @@ import java.util.Map;
 import org.springframework.stereotype.Service;
 
 @Service
-public class LinearSearchService {
+public class BinarySearchService {
     
     public Map<String, String> searchByOperations(String array, int value){
         int[] arrayList = convertToIntegerArray(array);
-        int resultValue = searchWithLinearSearch(arrayList, value);
+        int resultValue = searchWithBinarySearch(arrayList, value);
         Map<String, String> response = new HashMap<>();
         response.put("operation", "linearSearch");
         response.put("inputlist", array);
@@ -20,10 +20,11 @@ public class LinearSearchService {
 
     }
 
-    private int searchWithLinearSearch(int[] array, int value){
+    private int searchWithBinarySearch(int[] array, int value){
         for(int i = 0; i < array.length; i++){
             if (array[i] == value) return i;
         }
+        
         return -1;
     }
 
@@ -34,5 +35,5 @@ public class LinearSearchService {
             arrayIntegers[i] = Integer.valueOf(arrayString[i]);
         }
         return arrayIntegers;
-    }
+    }    
 }
