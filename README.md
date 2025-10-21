@@ -30,3 +30,7 @@ Y como eran dos servicios se adjunta la prueba de la ejecucion del otro servicio
 Se demuestra que lso servicios de Math estan corriendo en la nube de AWS
 
 ![](/img/instancias-ec2.png)
+
+## Video Demostartivo el video se encuentra en la carpeta /img/video
+
+![](/img/video.mp4)
